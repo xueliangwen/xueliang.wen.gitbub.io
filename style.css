@@ -1,37 +1,52 @@
-
+/* --- Global --- */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: #fff;
   color: #333;
 }
+
+/* --- Navbar --- */
 .navbar {
-  background: #f5f5f5;
+  background: #fff;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-bottom: 1px solid #ddd;
 }
+
 .navbar .nav-left {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
 }
+
 .navbar .nav-right {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
+
 .navbar .nav-right li {
   display: inline;
 }
+
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #444;
+  font-size: 16px;
+}
+
+.navbar a.active {
+  color: #007bff;
   font-weight: bold;
 }
-.navbar a.active {
-  border-bottom: 2px solid #000;
-}
+
+/* --- Main Layout --- */
 .container {
   display: flex;
   max-width: 1000px;
@@ -39,26 +54,44 @@ body {
   padding: 1rem;
   gap: 3rem;
 }
+
+/* --- Left profile area --- */
 .left {
   flex: 1;
   text-align: center;
 }
+
 .avatar {
   width: 180px;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
 .icons a {
   margin: 0 0.4rem;
 }
+
+/* --- Right content area --- */
+.right {
+  flex: 2;
+}
+
+/* Used for full-width content pages like projects/publications */
+.right.full-width {
+  flex: 1 1 100%;
+}
+
+/* --- Typography --- */
 .right p {
   text-align: justify;
 }
+
 .grid {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
+
 .grid ul {
   padding-left: 1.2rem;
 }
