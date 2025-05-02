@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* --- Navbar: Horizontal aligned --- */
+/* --- Navbar --- */
 .navbar {
   background: #fff;
   padding: 1rem 2rem;
@@ -66,12 +66,26 @@ body {
   margin-bottom: 1rem;
 }
 
-.icons a:hover img {
-  opacity: 0.7;
-  transition: 0.2s ease;
+/* --- Social icons --- */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
 }
 
-/* --- Right main content section --- */
+.icons img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  transition: 0.2s;
+}
+
+.icons a:hover img {
+  opacity: 0.7;
+}
+
+/* --- Right content section --- */
 .right {
   flex: 2;
 }
@@ -80,7 +94,7 @@ body {
   flex: 1 1 100%;
 }
 
-/* --- Typography --- */
+/* --- Text formatting --- */
 .right p {
   text-align: justify;
 }
