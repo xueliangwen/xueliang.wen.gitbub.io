@@ -1,62 +1,60 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #fff;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h2>Your Name</h2>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </nav>
+  </header>
 
-.navbar {
-  background: #f5f5f5;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-.navbar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-.navbar a.active {
-  border-bottom: 2px solid #000;
-}
+  <main class="container">
+    <div class="left">
+      <img src="your-photo.jpg" alt="Your Name" class="avatar">
+      <h1>Your Name</h1>
+      <p>Title or Role</p>
+      <p>Affiliation or Institution</p>
+      <div class="icons">
+        <a href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-researchgate"></i></a>
+      </div>
+    </div>
 
-.container {
-  display: flex;
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 1rem;
-  gap: 3rem;
-}
+    <div class="right">
+      <h2>Biography</h2>
+      <p>
+        I am Your Name, a [your title] at [your institution]. My research focuses on [brief intro about your focus]. I am interested in solving real-world engineering challenges using computational tools and intelligent systems.
+      </p>
 
-.left {
-  flex: 1;
-  text-align: center;
-}
-.avatar {
-  width: 180px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-.icons a {
-  font-size: 1.4rem;
-  margin: 0 0.4rem;
-  color: #333;
-}
-
-.right {
-  flex: 2;
-}
-.grid {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.grid ul {
-  padding-left: 1.2rem;
-}
+      <div class="grid">
+        <div>
+          <h3>Interests</h3>
+          <ul>
+            <li>Floating dock dynamics</li>
+            <li>Numerical simulation</li>
+            <li>AI-enhanced engineering</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <p>🎓 Ph.D. in [Your Major], [Year Range]<br />
+          [Your University]</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
