@@ -51,8 +51,8 @@ body {
 .icons a {
   margin: 0 0.4rem;
 }
-.right {
-  flex: 2;
+.right p {
+  text-align: justify;
 }
 .grid {
   display: flex;
