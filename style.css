@@ -66,8 +66,9 @@ body {
   margin-bottom: 1rem;
 }
 
-.icons a {
-  margin: 0 0.4rem;
+.icons a:hover img {
+  opacity: 0.7;
+  transition: 0.2s ease;
 }
 
 /* --- Right main content section --- */
